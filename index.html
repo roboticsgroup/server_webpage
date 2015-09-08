@@ -23,14 +23,24 @@
 				width: 960px;
 				margin: 20px auto;
 			}
-			#header {
-			  	text-align: center;
-				height: 100px;
-				padding: 0 15px;
-			}
 
 			.row {
 				display: inline-flex;
+			}
+
+			#header1 {
+				text-align: center;
+				width: 440px;
+				float: left;
+				padding: 5px 15px;
+				margin: auto 5px;
+			}
+			#header2 {
+				text-align: center;
+				width: 440px;
+				float: left;
+				padding: 5px 15px;
+				margin: auto 5px;
 			}
 
 			#content {
@@ -56,7 +66,7 @@
 			}
 
 			#footer {
-			  text-align: center;
+				text-align: center;
 				clear: both;
 				padding: 0 15px;
 			}
@@ -173,12 +183,21 @@
 	</head>
 	<body>
 		<div id="pagewrap">
-			<div id="header">
-			    <h2>
-			    	<a class="hovertext" href="http://robotics.mech.upatras.gr/" title="Robotics Group">
-			    		<img src="roboticsgroup.png" alt="Robotics Group" border="0"/>
-			    	</a>
-			    </h2>
+			<div class="row">
+				<div id="header1">
+				    <h2>
+				    	<a class="hovertext" href="http://robotics.mech.upatras.gr/" title="Robotics Group">
+				    		<img src="rg.png" alt="Robotics Group" border="0"/>
+				    	</a>
+				    </h2>
+				</div>
+				<div id="header2">
+					<h2>
+						<a class="hovertext" href="http://robotics.mech.upatras.gr/club/" title="Robotics Club">
+							<img src="rc.png" alt="Robotics Club" border="0"/>
+						</a>
+					</h2>
+				</div>
 			</div>
 
 			<div class="row">
@@ -192,16 +211,16 @@
 
 				<div id="middle">
 					<h2>
-						<a class="hovertext" title="Library" href="conferences">
-							<img src="library.png" alt="Library" border="0"/>
+						<a class="hovertext" title="Conferences" href="conferences">
+							<img src="conferences.png" alt="Conferences" border="0"/>
 						</a>
 					</h2>
 				</div>
 
 				<div id="sidebar">
 					<h2>
-						<a class="hovertext" title="ShareLaTeX" href="sharelatex">
-							<img src="sharelatex.png" alt="ShareLaTeX" border="0"/>
+						<a class="hovertext" title="Books" href="books">
+							<img src="books.png" alt="Books" border="0"/>
 						</a>
 					</h2>
 				</div>
@@ -226,8 +245,8 @@
 
 				<div id="sidebar">
 					<h2>
-						<a class="hovertext" href="http://robotics.mech.upatras.gr/club/" title="Robotics Club">
-							<img src="roboticsclub.png" alt="Robotics Club" border="0"/>
+						<a class="hovertext" title="ShareLaTeX" href="sharelatex">
+							<img src="sharelatex.png" alt="ShareLaTeX" border="0"/>
 						</a>
 					</h2>
 				</div>
