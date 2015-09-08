@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Robotics Group Services</title>
+		<style>
+			@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+			body { 
+			  font-family: 'Open Sans', sans-serif;
+			  color: #666;
+			}
+
+			img {
+				max-width:100%;
+				max-height:100%;
+			}
+
+			/* STRUCTURE */
+
+			#pagewrap {
+				padding: 5px;
+				width: 960px;
+				margin: 20px auto;
+			}
+			#header {
+			  text-align: center;
+				height: 100px;
+				padding: 0 15px;
+			}
+
+			.row {
+				display: inline-flex;
+			}
+
+			#content {
+				text-align: center;
+				width: 290px;
+				float: left;
+				padding: 5px 15px;
+				margin: auto 5px;
+			}
+			#middle {
+				text-align: center;
+				width: 294px; /* Account for margins + border values */
+				float: left;
+				padding: 5px 15px;
+				margin: auto 5px;
+			}
+			#sidebar {
+				text-align: center;
+				width: 270px;
+				padding: 5px 15px;
+				float: left;
+				margin: auto 5px;
+			}
+
+			#footer {
+			  text-align: center;
+				clear: both;
+				padding: 0 15px;
+			}
+
+			/* Hover Effects */
+			a.hovertext {
+				position: relative;
+				width: 100%;
+				text-decoration: none !important;
+				text-align: center;
+			}
+			a.hovertext:after {
+				content: attr(title);
+				font-size: 0.5em;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				padding: 0.5em 10px;
+				width: 100%;
+				background: rgba(0,0,0,0.8);
+				text-decoration: none !important;
+				color: #fff;
+				opacity: 0;
+				-webkit-transition: 0.5s;
+				-moz-transition: 0.5s;
+				-o-transition: 0.5s;
+				-ms-transition: 0.5s;
+			}
+			a.hovertext:hover:after, a.hovertext:focus:after {
+				opacity: 1.0;
+
+			/************************************************************************************
+			MEDIA QUERIES
+			*************************************************************************************/
+			/* for 980px or less */
+			@media screen and (max-width: 980px) {
+
+				#pagewrap {
+					width: 94%;
+				}
+				#content {
+					width: 41%;
+					padding: 1% 4%;
+				}
+				#middle {
+					width: 41%;
+					padding: 1% 4%;
+					margin: 0px 0px 5px 5px;
+					float: right;
+				}
+
+				#sidebar {
+					clear: both;
+					padding: 1% 4%;
+					width: auto;
+					float: none;
+				}
+
+				#header, #footer {
+					padding: 1% 4%;
+				}
+			}
+
+			/* for 700px or less */
+			@media screen and (max-width: 600px) {
+
+				#content {
+					width: auto;
+					float: none;
+				}
+
+				#middle {
+					width: auto;
+					float: none;
+					margin-left: 0px;
+				}
+
+				#sidebar {
+					width: auto;
+					float: none;
+				}
+
+			}
+
+			/* for 480px or less */
+			@media screen and (max-width: 480px) {
+
+				#header {
+					height: auto;
+				}
+				h1 {
+					font-size: 2em;
+				}
+				#sidebar {
+					display: none;
+				}
+
+			}
+
+			#content {
+				background: #f8f8f8;
+			}
+			#sidebar {
+				background: #f8f8f8;
+			}
+			#header, #content, #middle, #sidebar {
+				margin-bottom: 5px;
+			}
+
+			#pagewrap, #header, #content, #middle, #sidebar, #footer {
+				border: solid 1px #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="pagewrap">
+			<div id="header">
+			    <h2>
+			    	<a class="hovertext" href="http://robotics.mech.upatras.gr/" title="Robotics Group">
+			    		<img src="roboticsgroup.png" alt="Robotics Group" border="0"/>
+			    	</a>
+			    </h2>
+			</div>
+
+			<div class="row">
+				<div id="content">
+					<h2>
+						<a class="hovertext" title="OwnCloud" href="owncloud">
+							<img src="owncloud.png" alt="OwnCloud" border="0"/>
+						</a>
+					</h2>
+				</div>
+
+				<div id="middle">
+					<h2>
+						<a class="hovertext" href="http://robotics.mech.upatras.gr/club/" title="Robotics Club">
+							<img src="roboticsclub.png" alt="Robotics Club" border="0"/>
+						</a>
+					</h2>
+				</div>
+
+				<div id="sidebar">
+					<h2>
+						<a class="hovertext" title="ShareLaTeX" href="sharelatex">
+							<img src="sharelatex.png" alt="ShareLaTeX" border="0"/>
+						</a>
+					</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="content">
+					<h2>
+						<a class="hovertext" title="VirtualBox" href="phpvirtualbox">
+							<img src="virtualbox.png" alt="VirtualBox" border="0"/>
+						</a>
+					</h2>
+				</div>
+
+				<div id="middle">
+					<h2>
+						<a class="hovertext" title="Enterprise PDM" href="http://150.140.151.150:8000/PDM/">
+							<img src="epdm.png" alt="ePDM" border="0"/>
+						</a>
+					</h2>
+				</div>
+
+				<div id="sidebar">
+					<h2>
+						<a class="hovertext" title="i-Librarian" href="librarian">
+							<img src="librarian.png" alt="i-Librarian" border="0"/>
+						</a>
+					</h2>
+				</div>
+			</div>
+			
+			<div id="footer">
+				<h2>
+					<a class="hovertext" title="Webmin" href="http://150.140.151.150:8085">
+						<img src="webmin.png" alt="Webmin" border="0"/>
+					</a>
+				</h2>
+			</div>
+
+		</div>
+	</body>
+</html>
